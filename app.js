@@ -1,6 +1,9 @@
+let numeroLimite = 10;
+listaNumerosSorteados = [];
 //atribuindo uma funcao a uma variavel
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 0;
+exibirMensagemInicial();
 //O codigo acima seleciona o elemento HTML e altera o seu conteúdo
 //let campo = document.querySelector(tag)
 //campo.innerHTML = texto
@@ -37,7 +40,18 @@ function verificarChute() {
 }
 //o return finaliza a execução da função e devolve um valor
 function gerarNumeroAleatorio() {
-   return parseInt(Math.random()* 10 + 1);
+   let numeroEscolhido = parseInt(Math.random()* numeroLimite + 1);
+   let quantidadeDeElementosNaLista = listaNumerosSorteados.length;
+   if (quantidadeDeElementosNaLista == numeroLimite) {
+       listaNumerosSorteados = [];
+   }
+   if (listaNumerosSorteados.includes(numeroEscolhido)) {
+       return gerarNumeroAleatorio();
+   } else {
+       listaNumerosSorteados.push(numeroEscolhido);
+       console.log(listaNumerosSorteados);
+       return numeroEscolhido;
+   }
 }
 function limparCampo() {
     chute = document.querySelector('input');
