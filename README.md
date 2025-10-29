@@ -9,5 +9,6 @@ Case the user don't get the answer right, show the message "the number secret is
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - ``Java Script``
+- ``HTML``
 - ``VS Code``
 - ``Responsive Voice``
