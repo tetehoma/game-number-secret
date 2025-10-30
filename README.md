@@ -14,4 +14,4 @@ Case the user don't get the answer right, show the message "the number secret is
 - ``Responsive Voice``
 
 ## Domínio da aplicação WEB
-(Game Number Secret) [jogonumerosecreto-hazel-nu.vercel.app]
+* [Game Number Secret] (jogonumerosecreto-hazel-nu.vercel.app)
