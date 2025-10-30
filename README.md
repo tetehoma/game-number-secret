@@ -12,3 +12,6 @@ Case the user don't get the answer right, show the message "the number secret is
 - ``HTML``
 - ``VS Code``
 - ``Responsive Voice``
+
+## Domínio da aplicação WEB
+(Game Number Secret) [jogonumerosecreto-hazel-nu.vercel.app]
